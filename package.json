@@ -1,10 +1,10 @@
 {
   "name": "three-emitter",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "High performance particle emitter for THREE.js",
   "homepage": "https://github.com/riokoe/three-emitter",
   "repository": "github:riokoe/three-emitter",
-  "licence": "MIT",
+  "license": "MIT",
   "author": "riokoe",
   "funding": "https://ko-fi.com/riokoe",
   "keywords": [ "three", "three.js", "emitter", "particle", "particles", "3d", "browser", "javascript", "typescript", "webgl", "shader" ],

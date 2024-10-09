@@ -2,7 +2,13 @@
   "name": "three-emitter",
   "version": "0.0.1",
   "description": "High performance particle emitter for THREE.js",
-  "main": "index.js",
+  "homepage": "https://github.com/riokoe/three-emitter",
+  "repository": "github:riokoe/three-emitter",
+  "licence": "MIT",
+  "author": "riokoe",
+  "funding": "https://ko-fi.com/riokoe",
+  "keywords": [ "three", "three.js", "emitter", "particle", "particles", "3d", "browser", "javascript", "typescript", "webgl", "shader" ],
+  "main": "./dist/esm/index.js",
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
@@ -10,14 +16,18 @@
       "require": "./dist/cjs/index.js"
     }
   },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "type": "module",
   "scripts": {
     "build": "npx tsc -p ./build/tsconfig.esm.json && npx tsc -p ./build/tsconfig.cjs.json && npx tsc -p ./build/tsconfig.types.json && npx rollup --config ./build/rollup.config.js",
     "docs": "npx typedoc src/index.ts --gitRevision main --highlightLanguages typescript --plugin typedoc-plugin-markdown --entryFileName index.md --indexFormat table --parametersFormat table --classPropertiesFormat table --enumMembersFormat table --typeDeclarationFormat table --propertyMembersFormat table --interfacePropertiesFormat table --mergeReadme false --hideBreadcrumbs true --excludeExternals && rm -rf docs/_media && mv docs/globals.md docs/index.md",
     "lint": "npx eslint"
   },
-  "author": "",
-  "license": "ISC",
   "peerDependencies": {
     "three": "^0.169.0"
   },

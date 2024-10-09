@@ -12,15 +12,15 @@ The library provides an abstraction layer for [InstancedBufferGeometry](https://
 
 ![Demo1](https://github.com/riokoe/three-emitter/raw/main/demos/shared/demo2.gif)
 
- - [Open demo](https://github.com/riokoe/three-emitter/raw/main/demos/multiple_emitters/emitter.js)
- - [Source code](https://github.com/riokoe/three-emitter/raw/main/demos/multiple_emitters/emitter.js)
+ - [Open demo](https://github.com/riokoe/three-emitter/tree/main/demos/multiple_emitters/emitter.js)
+ - [Source code](https://github.com/riokoe/three-emitter/tree/main/demos/multiple_emitters/emitter.js)
 
 ## Multiple Particle Emitters
 
 ![Demo2](https://github.com/riokoe/three-emitter/raw/main/demos/shared/demo1.gif)
 
- - [Open demo](https://github.com/riokoe/three-emitter/raw/main/demos/single_emitter/emitter.js)
- - [Source code](https://github.com/riokoe/three-emitter/raw/main/demos/single_emitter/emitter.js)
+ - [Open demo](https://github.com/riokoe/three-emitter/tree/main/demos/single_emitter/emitter.js)
+ - [Source code](https://github.com/riokoe/three-emitter/tree/main/demos/single_emitter/emitter.js)
 
 # Installation
 
@@ -75,7 +75,7 @@ import { Emitter, EmitterInstance } from "three-emitter";
 
 # Usage
 
-For details see the [documentation](https://github.com/riokoe/three-emitter/raw/main/docs/index.md) and the source code for [single emitters](https://github.com/riokoe/three-emitter/raw/main/demos/single_emitter/emitter.js) and [multiple emitters]((https://github.com/riokoe/three-emitter/raw/main/demos/multiple_emitters/emitter.js)).
+For details see the [documentation](https://github.com/riokoe/three-emitter/tree/main/docs/index.md) and the source code for [single emitters](https://github.com/riokoe/three-emitter/tree/main/demos/single_emitter/emitter.js) and [multiple emitters]((https://github.com/riokoe/three-emitter/tree/main/demos/multiple_emitters/emitter.js)).
 
 The library provides an abstraction layer for [InstancedBufferGeometry](https://threejs.org/docs/#api/en/core/InstancedBufferGeometry) and [RawShaderMaterial](https://threejs.org/docs/?q=raws#api/en/materials/RawShaderMaterial) allowing you to spawn multiple particle emitters running on the same shader program. There are two main interfaces: `Emitter` to define particle emitters and `EmitterInstance` to spawn multiple particle emitters per definition:
 
@@ -318,11 +318,11 @@ The scene now consists of 10 independently positioned/animated particle emitters
 
 | Class | Description |
 | ------ | ------ |
-| [Emitter](https://github.com/riokoe/three-emitter/raw/main/docs/classes/Emitter.md) | A particle emitter. Provides an easy to use interface for THREE's InstancedBufferGeometry and RawShaderMaterial to spawn and manage particle emitters. Can emit particles on its own or can be used to create EmitterInstances with distinct shader attributes/uniforms while running on the same shader program. |
-| [EmitterInstance](https://github.com/riokoe/three-emitter/raw/main/docs/classes/EmitterInstance.md) | A particle emitter instance. Provides the possibility to define and mutate shader attributes on a subset of particles while running on a shared shader program. Possible use cases: - Emit particles in different spacial locations - Emit particles with different shader attributes |
+| [Emitter](https://github.com/riokoe/three-emitter/tree/main/docs/classes/Emitter.md) | A particle emitter. Provides an easy to use interface for THREE's InstancedBufferGeometry and RawShaderMaterial to spawn and manage particle emitters. Can emit particles on its own or can be used to create EmitterInstances with distinct shader attributes/uniforms while running on the same shader program. |
+| [EmitterInstance](https://github.com/riokoe/three-emitter/tree/main/docs/classes/EmitterInstance.md) | A particle emitter instance. Provides the possibility to define and mutate shader attributes on a subset of particles while running on a shared shader program. Possible use cases: - Emit particles in different spacial locations - Emit particles with different shader attributes |
 
 ## Interfaces
 
 | Interface | Description |
 | ------ | ------ |
-| [IEmitterOptions](https://github.com/riokoe/three-emitter/raw/main/docs/interfaces/IEmitterOptions.md) | Options for the `Emitter`. |
+| [IEmitterOptions](https://github.com/riokoe/three-emitter/tree/main/docs/interfaces/IEmitterOptions.md) | Options for the `Emitter`. |

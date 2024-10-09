@@ -53,16 +53,16 @@ Constructs a new emitter.
 
 #### Defined in
 
-Emitter.ts:188
+[Emitter.ts:188](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L188)
 
 ## Properties
 
 | Property | Modifier | Type | Default value | Description | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| `autoUpdate` | `public` | `boolean` | `true` | Indicates whether the emitter auto-updates. | Emitter.ts:165 |
-| `knownInstances` | `public` | `Set`\<[`EmitterInstance`](EmitterInstance.md)\> | `undefined` | A set of all EmitterInstances running on this Emitter. Will be auto-updated when EmitterInstances are created/disposed. | Emitter.ts:176 |
-| `maxParticles` | `public` | `number` | `undefined` | The maximum number of particles. | Emitter.ts:170 |
-| `timestamp` | `protected` | `number` | `0` | A timestamp used for the default `time` uniform. | Emitter.ts:181 |
+| `autoUpdate` | `public` | `boolean` | `true` | Indicates whether the emitter auto-updates. | [Emitter.ts:165](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L165) |
+| `knownInstances` | `public` | `Set`\<[`EmitterInstance`](EmitterInstance.md)\> | `undefined` | A set of all EmitterInstances running on this Emitter. Will be auto-updated when EmitterInstances are created/disposed. | [Emitter.ts:176](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L176) |
+| `maxParticles` | `public` | `number` | `undefined` | The maximum number of particles. | [Emitter.ts:170](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L170) |
+| `timestamp` | `protected` | `number` | `0` | A timestamp used for the default `time` uniform. | [Emitter.ts:181](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L181) |
 
 ## Accessors
 
@@ -78,7 +78,7 @@ Interface for the internal geometry's attributes.
 
 #### Defined in
 
-Emitter.ts:540
+[Emitter.ts:540](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L540)
 
 ***
 
@@ -104,7 +104,7 @@ Interface for the internal geometry's instanceCount.
 
 #### Defined in
 
-Emitter.ts:547
+[Emitter.ts:547](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L547)
 
 ***
 
@@ -120,7 +120,7 @@ Interface for the internal material's uniforms.
 
 #### Defined in
 
-Emitter.ts:531
+[Emitter.ts:531](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L531)
 
 ## Methods
 
@@ -144,7 +144,7 @@ emitter.dispose();
 
 #### Defined in
 
-Emitter.ts:521
+[Emitter.ts:521](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L521)
 
 ***
 
@@ -181,7 +181,7 @@ emitter.fillAttribute("someAttribute", 0);
 
 #### Defined in
 
-Emitter.ts:459
+[Emitter.ts:459](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L459)
 
 ***
 
@@ -204,7 +204,7 @@ Used internally.
 
 #### Defined in
 
-Emitter.ts:393
+[Emitter.ts:393](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L393)
 
 ***
 
@@ -227,7 +227,7 @@ Used internally.
 
 #### Defined in
 
-Emitter.ts:407
+[Emitter.ts:407](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L407)
 
 ***
 
@@ -251,7 +251,7 @@ attributes.
 
 #### Defined in
 
-Emitter.ts:423
+[Emitter.ts:423](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L423)
 
 ***
 
@@ -285,7 +285,7 @@ const emitter = new Emitter()
 
 #### Defined in
 
-Emitter.ts:237
+[Emitter.ts:237](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L237)
 
 ***
 
@@ -324,7 +324,7 @@ These built-ins can also be provided via `attributes`.
 
 #### Defined in
 
-Emitter.ts:268
+[Emitter.ts:268](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L268)
 
 ***
 
@@ -358,7 +358,7 @@ function update(ms) {
 
 #### Defined in
 
-Emitter.ts:379
+[Emitter.ts:379](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L379)
 
 ***
 
@@ -389,7 +389,7 @@ const emitter = new Emitter()
 
 #### Defined in
 
-Emitter.ts:309
+[Emitter.ts:309](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L309)
 
 ***
 
@@ -416,7 +416,7 @@ const emitter = new Emitter()
 
 #### Defined in
 
-Emitter.ts:288
+[Emitter.ts:288](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L288)
 
 ***
 
@@ -446,7 +446,7 @@ const emitter = new Emitter()
 
 #### Defined in
 
-Emitter.ts:350
+[Emitter.ts:350](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L350)
 
 ***
 
@@ -477,7 +477,7 @@ const emitter = new Emitter()
 
 #### Defined in
 
-Emitter.ts:330
+[Emitter.ts:330](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L330)
 
 ***
 
@@ -504,4 +504,4 @@ function update(ms) {
 
 #### Defined in
 
-Emitter.ts:500
+[Emitter.ts:500](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L500)

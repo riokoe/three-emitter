@@ -56,16 +56,16 @@ Create an EmitterInstance.
 
 #### Defined in
 
-EmitterInstance.ts:96
+[EmitterInstance.ts:96](https://github.com/riokoe/three-emitter/blob/main/src/EmitterInstance.ts#L96)
 
 ## Properties
 
 | Property | Modifier | Type | Default value | Description | Defined in |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| `attributeIndices` | `public` | `Partial`\<`Record`\<`string`, `number`\>\> | `{}` | A map of attributes and the corresponding EventEmitter's index. Used internally to keep track of subarray ranges. | EmitterInstance.ts:88 |
-| `attributes` | `public` | `Partial`\<`Record`\<`string`, `Float32Array`\>\> | `{}` | Typed (sub-) arrays for the corresponding shader attribute buffers. `THREE.BufferAttribute` attributes are shared across all instances. `THREE.InstancedBufferAttribute` attributes are per instance subarraus. `const emitter = new Emitter({ maxParticles: 1000, attributes: { sharedAttr: new THREE.BufferAttribute(new Float32Array(12)), distinctAttr1: new THREE.InstancedBufferAttribute(new Float32Array(1000), 1) distinctAttr2: new THREE.InstancedBufferAttribute(new Float32Array(3000), 3) } }); console.log(emitter.geometry.attributes.sharedAttr.array.length); // 12 console.log(emitter.geometry.attributes.distinctAttr1.array.length); // 1000 console.log(emitter.geometry.attributes.distinctAttr2.array.length); // 3000 const instance1 = new EmitterInstance(emitter, 100); console.log(instance1.attributes.sharedAttr.length); // 12 console.log(instance1.attributes.distinctAttr1.length); // 100 console.log(instance1.attributes.distinctAttr2.length); // 300 const instance2 = new EmitterInstance(emitter, 200); console.log(instance2.attributes.sharedAttr.length); // 12 console.log(instance2.attributes.distinctAttr1.length); // 200 console.log(instance2.attributes.distinctAttr2.length); // 600` See `fillAttributes()` for an easy way to manipulate attributes. | EmitterInstance.ts:82 |
-| `emitter` | `public` | [`Emitter`](Emitter.md) | `undefined` | The EmitterInstance's parent Emitter. All EmitterInstances will share the same shader program while having access to their own shader attributes. | EmitterInstance.ts:48 |
-| `particleAmount` | `public` | `number` | `0` | The amount of particles in the EmitterInstance. Must be smaller/equal to its parent Emitter's maxParticles. | EmitterInstance.ts:41 |
+| `attributeIndices` | `public` | `Partial`\<`Record`\<`string`, `number`\>\> | `{}` | A map of attributes and the corresponding EventEmitter's index. Used internally to keep track of subarray ranges. | [EmitterInstance.ts:88](https://github.com/riokoe/three-emitter/blob/main/src/EmitterInstance.ts#L88) |
+| `attributes` | `public` | `Partial`\<`Record`\<`string`, `Float32Array`\>\> | `{}` | Typed (sub-) arrays for the corresponding shader attribute buffers. `THREE.BufferAttribute` attributes are shared across all instances. `THREE.InstancedBufferAttribute` attributes are per instance subarraus. `const emitter = new Emitter({ maxParticles: 1000, attributes: { sharedAttr: new THREE.BufferAttribute(new Float32Array(12)), distinctAttr1: new THREE.InstancedBufferAttribute(new Float32Array(1000), 1) distinctAttr2: new THREE.InstancedBufferAttribute(new Float32Array(3000), 3) } }); console.log(emitter.geometry.attributes.sharedAttr.array.length); // 12 console.log(emitter.geometry.attributes.distinctAttr1.array.length); // 1000 console.log(emitter.geometry.attributes.distinctAttr2.array.length); // 3000 const instance1 = new EmitterInstance(emitter, 100); console.log(instance1.attributes.sharedAttr.length); // 12 console.log(instance1.attributes.distinctAttr1.length); // 100 console.log(instance1.attributes.distinctAttr2.length); // 300 const instance2 = new EmitterInstance(emitter, 200); console.log(instance2.attributes.sharedAttr.length); // 12 console.log(instance2.attributes.distinctAttr1.length); // 200 console.log(instance2.attributes.distinctAttr2.length); // 600` See `fillAttributes()` for an easy way to manipulate attributes. | [EmitterInstance.ts:82](https://github.com/riokoe/three-emitter/blob/main/src/EmitterInstance.ts#L82) |
+| `emitter` | `public` | [`Emitter`](Emitter.md) | `undefined` | The EmitterInstance's parent Emitter. All EmitterInstances will share the same shader program while having access to their own shader attributes. | [EmitterInstance.ts:48](https://github.com/riokoe/three-emitter/blob/main/src/EmitterInstance.ts#L48) |
+| `particleAmount` | `public` | `number` | `0` | The amount of particles in the EmitterInstance. Must be smaller/equal to its parent Emitter's maxParticles. | [EmitterInstance.ts:41](https://github.com/riokoe/three-emitter/blob/main/src/EmitterInstance.ts#L41) |
 
 ## Methods
 
@@ -82,7 +82,7 @@ Used internally.
 
 #### Defined in
 
-EmitterInstance.ts:156
+[EmitterInstance.ts:156](https://github.com/riokoe/three-emitter/blob/main/src/EmitterInstance.ts#L156)
 
 ***
 
@@ -98,7 +98,7 @@ Internal method to (re-)calculate attribute subarrays
 
 #### Defined in
 
-EmitterInstance.ts:175
+[EmitterInstance.ts:175](https://github.com/riokoe/three-emitter/blob/main/src/EmitterInstance.ts#L175)
 
 ***
 
@@ -115,7 +115,7 @@ all its assets.
 
 #### Defined in
 
-EmitterInstance.ts:166
+[EmitterInstance.ts:166](https://github.com/riokoe/three-emitter/blob/main/src/EmitterInstance.ts#L166)
 
 ***
 
@@ -158,4 +158,4 @@ instance2.fillAttribute("someAttribute", 0.1);
 
 #### Defined in
 
-EmitterInstance.ts:132
+[EmitterInstance.ts:132](https://github.com/riokoe/three-emitter/blob/main/src/EmitterInstance.ts#L132)

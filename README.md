@@ -10,14 +10,14 @@ The library provides an abstraction layer for [InstancedBufferGeometry](https://
 
 ## Single Particle Emitter (500k particles)
 
-![Demo1](https://github.com/riokoe/three-emitter/raw/main/demos/shared/demo2.gif)
+[![Demo1](https://github.com/riokoe/three-emitter/raw/main/demos/shared/demo2.gif)](https://riokoe.github.io/three-emitter/demos/single_emitter/index.html)
 
  - [Open demo](https://riokoe.github.io/three-emitter/demos/single_emitter/index.html)
  - [Source code](https://github.com/riokoe/three-emitter/tree/main/demos/single_emitter/emitter.js)
 
 ## Multiple Particle Emitters
 
-![Demo2](https://github.com/riokoe/three-emitter/raw/main/demos/shared/demo1.gif)
+[![Demo2](https://github.com/riokoe/three-emitter/raw/main/demos/shared/demo1.gif)](https://riokoe.github.io/three-emitter/demos/multiple_emitters/index.html)
 
  - [Open demo](https://riokoe.github.io/three-emitter/demos/multiple_emitters/index.html)
  - [Source code](https://github.com/riokoe/three-emitter/tree/main/demos/multiple_emitters/emitter.js)

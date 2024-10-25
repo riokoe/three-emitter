@@ -1,6 +1,6 @@
 {
   "name": "three-emitter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "High performance particle emitter for THREE.js",
   "homepage": "https://github.com/riokoe/three-emitter",
   "repository": "github:riokoe/three-emitter",

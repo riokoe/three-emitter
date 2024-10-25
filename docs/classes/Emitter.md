@@ -78,7 +78,7 @@ Interface for the internal geometry's attributes.
 
 #### Defined in
 
-[Emitter.ts:540](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L540)
+[Emitter.ts:548](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L548)
 
 ***
 
@@ -104,7 +104,7 @@ Interface for the internal geometry's instanceCount.
 
 #### Defined in
 
-[Emitter.ts:547](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L547)
+[Emitter.ts:555](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L555)
 
 ***
 
@@ -120,7 +120,7 @@ Interface for the internal material's uniforms.
 
 #### Defined in
 
-[Emitter.ts:531](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L531)
+[Emitter.ts:539](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L539)
 
 ## Methods
 
@@ -144,7 +144,7 @@ emitter.dispose();
 
 #### Defined in
 
-[Emitter.ts:521](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L521)
+[Emitter.ts:529](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L529)
 
 ***
 
@@ -181,7 +181,7 @@ emitter.fillAttribute("someAttribute", 0);
 
 #### Defined in
 
-[Emitter.ts:459](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L459)
+[Emitter.ts:467](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L467)
 
 ***
 
@@ -504,4 +504,4 @@ function update(ms) {
 
 #### Defined in
 
-[Emitter.ts:500](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L500)
+[Emitter.ts:508](https://github.com/riokoe/three-emitter/blob/main/src/Emitter.ts#L508)

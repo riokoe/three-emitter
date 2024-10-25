@@ -422,14 +422,22 @@ export default class Emitter extends THREE.Mesh<THREE.InstancedBufferGeometry, T
    */
   protected removeAndShiftAttributes(instance: EmitterInstance): void {
     for (const [name, attr] of Object.entries(instance.attributes)) {
-      if (!attr || !(name in this.geometry.attributes))
+      if (!attr || !(name in this.geometry.attributes) || this.geometry.attributes[name].count < this.maxParticles)
         continue;
 
       const start = instance.attributeIndices[name] ?? 0;
       const end = start + attr.length;
 
+      this.geometry.attributes[name].array.fill(0, start, end);
       this.geometry.attributes[name].array.set(this.geometry.attributes[name].array.subarray(end), start);
-      this.geometry.attributes[name].array.fill(0, start - end);
+      for (const siblingInstance of this.knownInstances) {
+        if (siblingInstance === instance || !siblingInstance.attributeIndices[name])
+          continue;
+        if (siblingInstance.attributeIndices[name] >= start) {
+          siblingInstance.attributeIndices[name] -= attr.length;
+          siblingInstance.calculateAttributeSubarrays();
+        }
+      }
       this.geometry.attributes[name].needsUpdate = true;
     }
   }

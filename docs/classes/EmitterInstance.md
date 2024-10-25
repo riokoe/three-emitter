@@ -88,7 +88,7 @@ Used internally.
 
 ### calculateAttributeSubarrays()
 
-> `protected` **calculateAttributeSubarrays**(): `void`
+> **calculateAttributeSubarrays**(): `void`
 
 Internal method to (re-)calculate attribute subarrays
 

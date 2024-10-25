@@ -172,13 +172,12 @@ export default class EmitterInstance {
    * 
    * @returns {void}
    */
-  protected calculateAttributeSubarrays(): void {
-    // TODO: allow for subarray re-shaping after instantiation
+  public calculateAttributeSubarrays(): void {
     for (const [name, attr] of Object.entries(this.emitter.geometry.attributes)) {
       if (attr.count >= this.emitter.maxParticles) {
         // Per-vertex attributes
         // Create an array view for the corresponding subarray
-        const start = Math.max(0, this.emitter.geometry.instanceCount * attr.itemSize);
+        const start = this.attributeIndices[name] ?? Math.max(0, this.emitter.geometry.instanceCount * attr.itemSize);
         const end = Math.min(attr.array.length, start + this.particleAmount * attr.itemSize);
         this.attributeIndices[name] = start;
         this.attributes[name] = new Proxy(attr.array.subarray(start, end) as Float32Array, {
@@ -207,7 +206,7 @@ export default class EmitterInstance {
           }
         });
       }
-      else {
+      else if (!this.attributes[name]) {
         // Per draw-call attributes
         // Store the array view for the entire buffer
         this.attributes[name] = attr.array as Float32Array;
